@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84269CC219FA581C00EAB223 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84269CB919FA581C00EAB223 /* Main_iPhone.storyboard */; };
+		84269CC319FA581C00EAB223 /* WakeUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 84269CBB19FA581C00EAB223 /* WakeUp.m */; };
+		84269CC419FA581C00EAB223 /* SetTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 84269CBD19FA581C00EAB223 /* SetTime.m */; };
+		84269CC519FA581C00EAB223 /* Recording.m in Sources */ = {isa = PBXBuildFile; fileRef = 84269CBF19FA581C00EAB223 /* Recording.m */; };
+		84269CC619FA581C00EAB223 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84269CC119FA581C00EAB223 /* MainView.m */; };
 		849A41ED19FA1920006F65ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 849A41EC19FA1920006F65ED /* main.m */; };
 		849A41F019FA1920006F65ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 849A41EF19FA1920006F65ED /* AppDelegate.m */; };
 		849A41F319FA1920006F65ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849A41F219FA1920006F65ED /* ViewController.m */; };
@@ -27,6 +32,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84269CB919FA581C00EAB223 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		84269CBA19FA581C00EAB223 /* WakeUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WakeUp.h; sourceTree = "<group>"; };
+		84269CBB19FA581C00EAB223 /* WakeUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WakeUp.m; sourceTree = "<group>"; };
+		84269CBC19FA581C00EAB223 /* SetTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetTime.h; sourceTree = "<group>"; };
+		84269CBD19FA581C00EAB223 /* SetTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetTime.m; sourceTree = "<group>"; };
+		84269CBE19FA581C00EAB223 /* Recording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recording.h; sourceTree = "<group>"; };
+		84269CBF19FA581C00EAB223 /* Recording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recording.m; sourceTree = "<group>"; };
+		84269CC019FA581C00EAB223 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		84269CC119FA581C00EAB223 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 		849A41E719FA1920006F65ED /* SADPM4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SADPM4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849A41EB19FA1920006F65ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		849A41EC19FA1920006F65ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +100,15 @@
 				849A41F119FA1920006F65ED /* ViewController.h */,
 				849A41F219FA1920006F65ED /* ViewController.m */,
 				849A41F419FA1920006F65ED /* Main.storyboard */,
+				84269CB919FA581C00EAB223 /* Main_iPhone.storyboard */,
+				84269CBA19FA581C00EAB223 /* WakeUp.h */,
+				84269CBB19FA581C00EAB223 /* WakeUp.m */,
+				84269CBC19FA581C00EAB223 /* SetTime.h */,
+				84269CBD19FA581C00EAB223 /* SetTime.m */,
+				84269CBE19FA581C00EAB223 /* Recording.h */,
+				84269CBF19FA581C00EAB223 /* Recording.m */,
+				84269CC019FA581C00EAB223 /* MainView.h */,
+				84269CC119FA581C00EAB223 /* MainView.m */,
 				849A41F719FA1920006F65ED /* Images.xcassets */,
 				849A41F919FA1920006F65ED /* LaunchScreen.xib */,
 				849A41EA19FA1920006F65ED /* Supporting Files */,
@@ -199,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84269CC219FA581C00EAB223 /* Main_iPhone.storyboard in Resources */,
 				849A41F619FA1920006F65ED /* Main.storyboard in Resources */,
 				849A41FB19FA1920006F65ED /* LaunchScreen.xib in Resources */,
 				849A41F819FA1920006F65ED /* Images.xcassets in Resources */,
@@ -219,9 +243,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84269CC419FA581C00EAB223 /* SetTime.m in Sources */,
+				84269CC319FA581C00EAB223 /* WakeUp.m in Sources */,
+				84269CC619FA581C00EAB223 /* MainView.m in Sources */,
 				849A41F319FA1920006F65ED /* ViewController.m in Sources */,
 				849A41F019FA1920006F65ED /* AppDelegate.m in Sources */,
 				849A41ED19FA1920006F65ED /* main.m in Sources */,
+				84269CC519FA581C00EAB223 /* Recording.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SADPM4/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SADPM4/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +442,7 @@
 				849A420C19FA1920006F65ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		849A420D19FA1920006F65ED /* Build configuration list for PBXNativeTarget "SADPM4Tests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +451,7 @@
 				849A420F19FA1920006F65ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
