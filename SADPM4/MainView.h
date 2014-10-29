@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Accounts/Accounts.h>
+#import <Social/Social.h>
 
-@interface MainView : UIViewController
+@interface MainView : UIViewController{}
 
 @end

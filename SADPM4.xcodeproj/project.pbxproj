@@ -12,6 +12,9 @@
 		84269CC419FA581C00EAB223 /* SetTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 84269CBD19FA581C00EAB223 /* SetTime.m */; };
 		84269CC519FA581C00EAB223 /* Recording.m in Sources */ = {isa = PBXBuildFile; fileRef = 84269CBF19FA581C00EAB223 /* Recording.m */; };
 		84269CC619FA581C00EAB223 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84269CC119FA581C00EAB223 /* MainView.m */; };
+		84676DEE1A0088FA00E61585 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84676DED1A0088FA00E61585 /* Accounts.framework */; };
+		84676DF01A00890400E61585 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84676DEF1A00890400E61585 /* Social.framework */; };
+		84676DF21A00890C00E61585 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84676DF11A00890C00E61585 /* Twitter.framework */; };
 		849A41ED19FA1920006F65ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 849A41EC19FA1920006F65ED /* main.m */; };
 		849A41F019FA1920006F65ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 849A41EF19FA1920006F65ED /* AppDelegate.m */; };
 		849A41F319FA1920006F65ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849A41F219FA1920006F65ED /* ViewController.m */; };
@@ -41,6 +44,9 @@
 		84269CBF19FA581C00EAB223 /* Recording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recording.m; sourceTree = "<group>"; };
 		84269CC019FA581C00EAB223 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
 		84269CC119FA581C00EAB223 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		84676DED1A0088FA00E61585 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		84676DEF1A00890400E61585 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		84676DF11A00890C00E61585 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		849A41E719FA1920006F65ED /* SADPM4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SADPM4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849A41EB19FA1920006F65ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		849A41EC19FA1920006F65ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -61,6 +67,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84676DF21A00890C00E61585 /* Twitter.framework in Frameworks */,
+				84676DF01A00890400E61585 /* Social.framework in Frameworks */,
+				84676DEE1A0088FA00E61585 /* Accounts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +86,9 @@
 		849A41DE19FA1920006F65ED = {
 			isa = PBXGroup;
 			children = (
+				84676DF11A00890C00E61585 /* Twitter.framework */,
+				84676DEF1A00890400E61585 /* Social.framework */,
+				84676DED1A0088FA00E61585 /* Accounts.framework */,
 				849A41E919FA1920006F65ED /* SADPM4 */,
 				849A420319FA1920006F65ED /* SADPM4Tests */,
 				849A41E819FA1920006F65ED /* Products */,
