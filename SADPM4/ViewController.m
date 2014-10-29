@@ -15,6 +15,15 @@
 
 @implementation ViewController
 
+- (IBAction)t_resister:(UIButton *)sender {
+    NSString *urlString = @"https://twitter.com/?lang=ja";
+    NSURL *url = [NSURL URLWithString:urlString];
+    
+    // ブラウザを起動する
+    [[UIApplication sharedApplication] openURL:url];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.

@@ -17,6 +17,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    
+    ACAccountStore *accountStore = [[ACAccountStore alloc] init];
+    ACAccountType *twitterAccountType = [accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
+    
+    [accountStore
+     requestAccessToAccountsWithType:twitterAccountType
+     options:nil
+     completion:^(BOOL granted, NSError *error)
+     {
+         if (!granted) {
+             NSLog(@"ユーザーがアクセスを拒否しました。");
+         }else{
+             NSArray *twitterAccounts = [accountStore accountsWithAccountType:twitterAccountType]; // 追加
+             NSLog(@"twitterAccounts = %@", twitterAccounts); // 追加
+             if ([twitterAccounts count] > 0) { // 追加
+                 ACAccount *account = [twitterAccounts objectAtIndex:0]; // 追加
+                 NSLog(@"account = %@", account); // 追加
+             }else{
+                 NSLog(@"account = null");
+             } // 追加
+         }
+     }];
 }
 
 - (void)didReceiveMemoryWarning {

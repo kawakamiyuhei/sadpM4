@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Twitter/Twitter.h>
+#import <Accounts/Accounts.h>
+#import <Social/Social.h>
 
 @interface ViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UIButton *t_resister;
 
 @end
 
