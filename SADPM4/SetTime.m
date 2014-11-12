@@ -7,6 +7,7 @@
 //
 
 #import "SetTime.h"
+#import <Parse/Parse.h>
 
 @interface SetTime ()
 
@@ -37,5 +38,29 @@
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
+- (IBAction)storeTimer:(id)sender {
+    PFObject *objectData = [[PFObject alloc] initWithClassName:@"Test"];
+    //データを設定する
+    [objectData setObject:@"Kawakami" forKey:@"name"];
+    
+    NSDateFormatter *inputDateFormatter = [[NSDateFormatter alloc] init];
+    NSString *inputDateStr = @"yyyy/MM/dd HH:mm:ss Z";
+    [inputDateFormatter setDateFormat:inputDateStr];
+    NSString *intputDateStr = @"2000/01/02 03:04:05 +0000";
+    NSDate *date = [inputDateFormatter dateFromString:intputDateStr];
+    
+    [objectData setObject:date forKey:@"Time"];
+    
+    //保存する
+    [objectData save];
+    NSString *msg = @"登録に成功しました。";
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
+                                                    message:msg
+                                                   delegate:nil
+                                          cancelButtonTitle:nil
+                                          otherButtonTitles:@"OK", nil];
+    [alert show];
+
+}
 
 @end
