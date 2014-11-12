@@ -17,9 +17,12 @@
 
 @synthesize lb, dp;
 
+//ラベルの変更
 - (IBAction)dateChanged:(id)sender {
+    //ラベルに表示する日付・時刻のフォーマットを指定
     NSDateFormatter *df = [[NSDateFormatter alloc]init];
-    df.dateFormat = @"yyyy年MM月dd日 HH時mm分";
+    df.dateFormat = @"yyyy/MM/dd HH:mm:ss Z";
+    //ラベルに指定したフォーマットで表示
     lb.text = [df stringFromDate:dp.date];
 }
 
@@ -46,17 +49,20 @@
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
+//データのストア
 - (IBAction)storeTimer:(id)sender {
     PFObject *objectData = [[PFObject alloc] initWithClassName:@"Test"];
-    //データを設定する
+    //ユーザ名の取得
     [objectData setObject:@"Kawakami" forKey:@"name"];
     
+    //時間の取得
     NSDateFormatter *inputDateFormatter = [[NSDateFormatter alloc] init];
     NSString *inputDateStr = @"yyyy/MM/dd HH:mm:ss Z";
     [inputDateFormatter setDateFormat:inputDateStr];
-    NSString *intputDateStr = @"2000/01/02 03:04:05 +0000";
+    //NSString *intputDateStr = @"2000/01/02 03:04:05 +0000";
+    NSString *intputDateStr = lb.text;
     NSDate *dates = [inputDateFormatter dateFromString:intputDateStr];
-    
+    //カラム名Time
     [objectData setObject:dates forKey:@"Time"];
     
     //保存する
