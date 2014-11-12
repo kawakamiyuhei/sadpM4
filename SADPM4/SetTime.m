@@ -15,6 +15,14 @@
 
 @implementation SetTime
 
+@synthesize lb, dp;
+
+- (IBAction)dateChanged:(id)sender {
+    NSDateFormatter *df = [[NSDateFormatter alloc]init];
+    df.dateFormat = @"yyyy年MM月dd日 HH時mm分";
+    lb.text = [df stringFromDate:dp.date];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -47,9 +55,9 @@
     NSString *inputDateStr = @"yyyy/MM/dd HH:mm:ss Z";
     [inputDateFormatter setDateFormat:inputDateStr];
     NSString *intputDateStr = @"2000/01/02 03:04:05 +0000";
-    NSDate *date = [inputDateFormatter dateFromString:intputDateStr];
+    NSDate *dates = [inputDateFormatter dateFromString:intputDateStr];
     
-    [objectData setObject:date forKey:@"Time"];
+    [objectData setObject:dates forKey:@"Time"];
     
     //保存する
     [objectData save];

@@ -192,11 +192,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VfS-i9-bHa">
-                                <rect key="frame" x="0.0" y="64" width="320" height="162"/>
-                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5g-FT-Owt">
-                                <rect key="frame" x="145" y="244" width="30" height="30"/>
+                                <rect key="frame" x="145" y="310" width="30" height="30"/>
                                 <state key="normal" title="登録">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -204,6 +201,21 @@
                                     <action selector="storeTimer:" destination="kbg-Ep-IYC" eventType="touchUpInside" id="N16-V7-MCu"/>
                                 </connections>
                             </button>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="tgz-Tc-cE8">
+                                <rect key="frame" x="0.0" y="64" width="320" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="437463945.39760101">
+                                    <!--2014-11-12 05:45:45 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="dateChanged:" destination="kbg-Ep-IYC" eventType="valueChanged" id="zli-6M-YmR"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNu-jm-9Kn">
+                                <rect key="frame" x="78" y="253" width="226" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -214,6 +226,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="dp" destination="tgz-Tc-cE8" id="GqH-US-wKj"/>
+                        <outlet property="lb" destination="CNu-jm-9Kn" id="jXc-Hx-hCm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcT-Rm-lMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
