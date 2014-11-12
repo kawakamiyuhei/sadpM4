@@ -10,7 +10,6 @@
 
 @interface SetTime : UIViewController
 @property (weak, nonatomic) IBOutlet UIDatePicker *dp;
-@property (weak, nonatomic) IBOutlet UILabel *lb;
 @property (weak, nonatomic) IBOutlet UITextField *tf;
 
 @end

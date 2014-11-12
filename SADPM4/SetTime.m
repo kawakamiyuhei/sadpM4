@@ -15,16 +15,7 @@
 
 @implementation SetTime
 
-@synthesize lb, dp, tf;
-
-//ラベルの変更
-- (IBAction)dateChanged:(id)sender {
-    //ラベルに表示する日付・時刻のフォーマットを指定
-    NSDateFormatter *df = [[NSDateFormatter alloc]init];
-    df.dateFormat = @"yyyy/MM/dd HH:mm:ss Z";
-    //ラベルに指定したフォーマットで表示
-    lb.text = [df stringFromDate:dp.date];
-}
+@synthesize dp, tf;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -57,11 +48,12 @@
     [objectData setObject:user forKey:@"name"];
     
     //時間の取得
+    //ラベルに指定したフォーマットで表示
     NSDateFormatter *inputDateFormatter = [[NSDateFormatter alloc] init];
     NSString *inputDateStr = @"yyyy/MM/dd HH:mm:ss Z";
     [inputDateFormatter setDateFormat:inputDateStr];
     //NSString *intputDateStr = @"2000/01/02 03:04:05 +0000";
-    NSString *intputDateStr = lb.text;
+    NSString *intputDateStr = [inputDateFormatter stringFromDate:dp.date];
     NSDate *dates = [inputDateFormatter dateFromString:intputDateStr];
     [objectData setObject:dates forKey:@"Time"];
     
