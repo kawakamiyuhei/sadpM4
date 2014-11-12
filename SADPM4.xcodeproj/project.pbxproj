@@ -22,6 +22,7 @@
 		849A41F819FA1920006F65ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849A41F719FA1920006F65ED /* Images.xcassets */; };
 		849A41FB19FA1920006F65ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849A41F919FA1920006F65ED /* LaunchScreen.xib */; };
 		849A420719FA1920006F65ED /* SADPM4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 849A420619FA1920006F65ED /* SADPM4Tests.m */; };
+		84EA98A41A054C7A003AB2D3 /* VoiceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EA98A31A054C7A003AB2D3 /* VoiceTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		849A420019FA1920006F65ED /* SADPM4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SADPM4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		849A420519FA1920006F65ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		849A420619FA1920006F65ED /* SADPM4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SADPM4Tests.m; sourceTree = "<group>"; };
+		84EA98A21A054C7A003AB2D3 /* VoiceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceTableViewController.h; sourceTree = "<group>"; };
+		84EA98A31A054C7A003AB2D3 /* VoiceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				849A41F219FA1920006F65ED /* ViewController.m */,
 				849A41F419FA1920006F65ED /* Main.storyboard */,
 				84269CB919FA581C00EAB223 /* Main_iPhone.storyboard */,
+				84EA98A21A054C7A003AB2D3 /* VoiceTableViewController.h */,
+				84EA98A31A054C7A003AB2D3 /* VoiceTableViewController.m */,
 				84269CBA19FA581C00EAB223 /* WakeUp.h */,
 				84269CBB19FA581C00EAB223 /* WakeUp.m */,
 				84269CBC19FA581C00EAB223 /* SetTime.h */,
@@ -257,6 +262,7 @@
 			files = (
 				84269CC419FA581C00EAB223 /* SetTime.m in Sources */,
 				84269CC319FA581C00EAB223 /* WakeUp.m in Sources */,
+				84EA98A41A054C7A003AB2D3 /* VoiceTableViewController.m in Sources */,
 				84269CC619FA581C00EAB223 /* MainView.m in Sources */,
 				849A41F319FA1920006F65ED /* ViewController.m in Sources */,
 				849A41F019FA1920006F65ED /* AppDelegate.m in Sources */,

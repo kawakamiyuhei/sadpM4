@@ -12,9 +12,16 @@
 
 @interface Recording : UIViewController{
     IBOutlet UIButton *reco;
+    IBOutlet UIButton *addButton;
+    IBOutlet UIButton *playButton;
 }
 @property (retain,nonatomic)AVAudioRecorder *avRecorder;
 @property (retain,nonatomic)AVAudioSession *audioSession;
 @property (retain,nonatomic)AVAudioPlayer *avPlayer;
+@property (retain,nonatomic)NSString *userID;
+@property (retain,nonatomic)NSString *tempPath;
+@property (retain,nonatomic)NSString *addPath;
+
 
 @end
+
