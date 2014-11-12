@@ -15,7 +15,7 @@
 
 @implementation SetTime
 
-@synthesize lb, dp;
+@synthesize lb, dp, tf;
 
 //ラベルの変更
 - (IBAction)dateChanged:(id)sender {
@@ -53,7 +53,8 @@
 - (IBAction)storeTimer:(id)sender {
     PFObject *objectData = [[PFObject alloc] initWithClassName:@"Test"];
     //ユーザ名の取得
-    [objectData setObject:@"Kawakami" forKey:@"name"];
+    NSString *user = self.tf.text;
+    [objectData setObject:user forKey:@"name"];
     
     //時間の取得
     NSDateFormatter *inputDateFormatter = [[NSDateFormatter alloc] init];
@@ -62,7 +63,6 @@
     //NSString *intputDateStr = @"2000/01/02 03:04:05 +0000";
     NSString *intputDateStr = lb.text;
     NSDate *dates = [inputDateFormatter dateFromString:intputDateStr];
-    //カラム名Time
     [objectData setObject:dates forKey:@"Time"];
     
     //保存する
@@ -74,7 +74,6 @@
                                           cancelButtonTitle:nil
                                           otherButtonTitles:@"OK", nil];
     [alert show];
-
 }
 
 @end
